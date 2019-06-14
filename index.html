@@ -34,10 +34,145 @@
         <link rel="icon" type="image/png" sizes="32x32" href="static/img/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="96x96" href="static/img/favicon/favicon-96x96.png">
         <link rel="icon" type="image/png" sizes="16x16" href="static/img/favicon/favicon-16x16.png">
+
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="static/img/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <!-- <meta name="google-site-verification" content="xdqQAL6KCVHCJcgHYDB6DDCnhx3QI6IMeen9BrKTveg" />
+        <meta name="google-site-verification" content="95psw0DXvxCto91NvXCF9AjiNHvWelhIMJ6tdah-FXE" /> -->
+        <!--if lt IE 9script(src='//html5shim.googlecode.com/svn/trunk/html5.js')
+        -->
+        <meta name="robots" content="index, follow">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- Navigation Menu-->
+    <nav ng-class="hide-on-small-only">
+            <ul class="side-nav fixed section table-of-contents">
+                <li class="logo">
+                    <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro" class="brand-logo teal-text">
+                        <h1>Sharad Shinde
+                            <span class="brown-text light">Full Stack Developer</span>
+                        </h1>
+                    </a>
+                </li>
+                <li class="bold">
+                    <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text">
+                        <i class="mdi-social-person small"></i>
+                        <span>About</span>
+                    </a>
+                </li>
+                <li class="bold">
+                    <a aria-label="Navigate to the Experience section" href="#experience" class="waves-effect waves-dark cyan-text">
+                        <i class="mdi-action-trending-up small"></i>
+                        <span>Experience</span>
+                    </a>
+                </li>
+                <li class="bold">
+                    <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark indigo-text">
+                        <i class="mdi-av-web small"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li class="bold">
+                    <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark purple-text">
+                        <i class="mdi-av-equalizer small"></i>
+                        <span>Skills</span>
+                    </a>
+                </li>
+                <li class="bold">
+                    <a aria-label="Navigate to the Certificates section" href="#certificates" class="waves-effect waves-dark red-text">
+                        <i class="mdi-action-grade small"></i>
+                        <span>Certificates</span>
+                    </a>
+                </li>
+                <li class="bold">
+                    <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark orange-text">
+                        <i class="mdi-social-school small"></i>
+                        <span>Education</span>
+                    </a>
+                </li>
+                <li class="bold">
+                    <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark brown-text">
+                        <i class="mdi-content-mail small"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+                <li class="bold">
+                    <a aria-label="Open Sharad's resume in a new tab" href="https://drive.google.com/open?id=1kgTSMQ8GZ4Fq7OSfIDmOrEm8avjmlDYO"
+                        rel="noopener" target="_blank" class="waves-effect waves-dark grey-text text-darken-3">
+                        <i class="mdi-action-description small"></i>
+                        <span>Resume</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="hide-on-large only trigger z-depth-1">
+            <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out" class="button-collapse">
+                <i class="mdi-navigation-menu"></i>
+            </a>
+            <div class="name-title">
+                <a id="name" aria-label="Navigate to the beginning of the page" href="#main" class="teal-text">Sharad Shinde</a>
+                <span class="brown-text light">Full Stack Developer</span>
+            </div>
+        </nav>
+        <nav class="hide-on-large only">
+            <ul id="slide-out" class="side-nav">
+                <li class="bold">
+                    <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text">
+                        <i class="mdi-social-person small"></i>
+                        <span>About</span>
+                    </a>
+                </li>
+                <li class="bold">
+                    <a aria-label="Navigate to the Experience section" href="#experience" class="waves-effect waves-dark cyan-text">
+                        <i class="mdi-action-trending-up small"></i>
+                        <span>Experience</span>
+                    </a>
+                </li>
+                <li class="bold">
+                    <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark indigo-text">
+                        <i class="mdi-av-web small"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li class="bold">
+                    <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark purple-text">
+                        <i class="mdi-av-equalizer small"></i>
+                        <span>Skills</span>
+                    </a>
+                </li>
+                <li class="bold">
+                    <a aria-label="Navigate to the Certificates section" href="#certificates" class="waves-effect waves-dark red-text">
+                        <i class="mdi-action-grade small"></i>
+                        <span>Certificates</span>
+                    </a>
+                </li>
+                <li class="bold">
+                    <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark orange-text">
+                        <i class="mdi-social-school small"></i>
+                        <span>Education</span>
+                    </a>
+                </li>
+                <li class="bold">
+                    <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark brown-text">
+                        <i class="mdi-content-mail small"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+                <li class="bold">
+                    <a aria-label="Open Andrew's Resume in a new tab" href="https://drive.google.com/open?id=1kgTSMQ8GZ4Fq7OSfIDmOrEm8avjmlDYO"
+                        rel="noopener" target="_blank" class="waves-effect waves-dark grey-text text-darken-3">
+                        <i class="mdi-action-description small"></i>
+                        <span>Resume</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
 
 </body>
 
