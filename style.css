@@ -6,6 +6,21 @@ body {
 a {
 	color: #009688;
 }
+
+.waves-effect.waves-blue .waves-ripple {
+   /* The alpha value allows the text and background color
+   of the button to still show through. */
+    background-color: rgba(33, 150, 243, 0.2);
+ }
+.card {
+	margin-bottom: 60px;
+}
+.card .role {
+	font-size: 1.25rem;
+  position: absolute;
+  right: 38px;
+  top: 35px;
+}
 blockquote {
 	border-left: 5px solid #795548;
 	color: #795548;
@@ -131,20 +146,6 @@ h3 {
 	position: absolute;
 	top: 0;
 	width: 100%;
-}
-.waves-effect.waves-blue .waves-ripple {
-   /* The alpha value allows the text and background color
-   of the button to still show through. */
-    background-color: rgba(33, 150, 243, 0.2);
- }
-.card {
-	margin-bottom: 60px;
-}
-.card .role {
-	font-size: 1.25rem;
-  position: absolute;
-  right: 38px;
-  top: 35px;
 }
 .card li a {
 	margin-right: 0;
