@@ -413,3 +413,15 @@ small { display: none;}
 		background-position-x: 70%;
 	}
 }
+
+
+#intro.section {
+	background: url(./static/Gallery/pmsharma7.jpeg) no-repeat top center/cover;
+	position: relative;
+	
+}
+@media (max-width: 900px) {
+	#intro.section  {
+		background: url(./static/Gallery/pmsharma10.jpeg) no-repeat top center/cover;
+	}
+}
