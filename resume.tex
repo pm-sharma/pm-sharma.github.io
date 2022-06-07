@@ -1,0 +1,188 @@
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Purushottam Sharma}} & Email: \href{mailto:}{pmsharma3.0@gmail.com}\\
+  \href{https://linkedin.com/in/pm-sharma}{Linkedin: ~~linkedin.com/in/pm-sharma} \\
+  \href{https://github.com/pm-sharma}{Github: ~~github.com/pm-sharma} \\
+  \href{http://pm-sharma.github.io/}{Portfolio: pm-sharma.github.io/} & Mobile:~~~+91-861-9283-041 \\
+\end{tabular*}
+
+\resumeSubHeadingListEnd
+\vspace{5pt}
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading{Winuall - Bengaluru}{}
+    {Software Engineer}{Aug 2020 - Jan 2021(Intern) - Present (Full-time)}
+    \resumeItemListStart
+    \resumeItem{Web app - ReactJS, Firebase}
+          {A game to predict which personality do you resemble with based on our dataset.}
+        \resumeItem{Mobile App - React-Native}
+          {Build iOS app from scratch to manage coaching institutes.}
+          \resumeItem{REST API using NodeJS}
+          {Contributed to SaaS Microservice (Payments and Quizzes).}
+          \resumeItem{Microfrontend Arch}{Setup Microfrontend based architecture to frontend repos}
+          \resumeItem{Setup Jenkins Pipeline for Android Mobile rollout}{Jenkins, Docker, Jfrog, Microsoft Azure, Groovy}
+          \resumeItem{CI/CD Setup to NodeJS repo}{Automated the deployment process of our backend project using Github Actions, Azure and Docker.}
+          \resumeItem{SEO}{Improve SEO of winuall.com website (VanilaJS)}
+          \resumeItem{Scripts}{Write a functions to migrate db mongo to postgresql, bulk android app rollout - (Python, Flask, Shell Script)}
+      \resumeItemListEnd
+\vspace{-5pt}
+    \resumeSubheading
+		{Google Developer Group}{}
+		{Web Developer}{Dec 2018 -  Jan 2021}
+		\resumeItemListStart
+        \resumeItem{Project with CMC Vellore, International Water Org and VIT Vellore Administration Website}
+          {Worked along with other members on various real time projects, mentored freshers and organised multiple hackathons - (Vanila JS, HTML, CSS, Bootstap, ReactJS, Python, Firebase)}
+		\resumeItemListEnd
+		
+	\resumeSubheading
+		{Interned at Winuall, Celebrify, SigmaTanent, LegalMind StartUps}{}
+		{Field of Web Development}{}
+		\resumeItemListStart
+        % \resumeItem{}
+		\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{~~Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Vellore Institute Of Technology}{Vellore, India}
+      {Bachelor of Technology - Information Technology;  GPA: 8.4}{July 2017 - June 2021}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Programming, Web development, Operating Systems, Data Structures, Analysis Of Algorithms, Artificial Intelligence, Machine Learning, Networking, Databases}}}
+    \resumeSubHeadingListEnd
+	    
+\vspace{-5pt}
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Languages}{~~~~~~ JavaScript, HTML, CSS, TypeScript, SQL, Bash}
+	\resumeSubItem{Frameworks}{~~~~React Native, NodeJS, Flask, Redux}
+	\resumeSubItem{Tools}{~~~~~~~~~~~~~~MongoDB, Jenkins, Docker, GIT, PostgreSQL, PWA, SEO, FireBase, Realm}
+	\resumeSubItem{Platforms}{~~~~~~~Linux, Web, Microsoft Azure, AWS, GCP}
+	\resumeSubItem{Interest}{~~~~~~~Blockchain, Security, Tech Communities}
+
+
+%-----------PROJECTS-----------------
+\vspace{5pt}
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubItem{Educative App for Adolescents}{ Empowering adolescents with knowledge about their fundamental right
+to health, development, safety and self-advocacy (Collaborated with CMC
+Vellore and with a couple of NGOs).}
+\vspace{2pt}
+\resumeSubItem{Riviera Event Website}{Developed the website for the event, Riviera is among top 3 college
+annual events in India.}
+\vspace{2pt}
+\resumeSubItem{Chrome Extension}{Quickly have a Google, YouTube or Duck Duck Go search from any website
+by just selecting the text and clicking the specified buttons like Google-G,
+YouTube-Y, DuckDuckGo-D.}
+\vspace{2pt}
+\resumeSubItem{IWA Web App}{Developed a website for the International Water Association(IWA)
+Conference to be held in Dec 2020.}
+\vspace{2pt}
+\resumeSubItem{NotePad PWA}{An offline capable progressive web app for storing notes.}
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+\section{Publications}
+\resumeSubHeadingListStart
+\resumeSubItem{Article: Automatic Number Plate Recognition System Using OpenCV and AWS}{Detect Number plate of car in an efficient way · Store the details of car · Monitor traffic activity.}
+\vspace{2pt}
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+%-----------Awards-----------------
+\section{Awards and Certificates}
+\begin{description}[font=$\bullet$]
+\item {Mobile Site Certification by Google (2018)}
+\item {Wackiest Idea Award at Hack
+Battle’19 By IEEECS (Second Runner Up) - Mar, 2019}
+\vspace{-5pt}
+\item {Best Social Change/Inclusivity Hack Award (Hack the Northeast) - August, 2021}
+
+\end{description}
+
+\vspace{-5pt}
+\section{Volunteer Experience}
+  \resumeSubHeadingListStart
+	\resumeSubheading{Web Developer at International Water Association}{London}
+    {Developed a website for International Water Association(IWA) Conference to be held on Dec 2020.}{Mar 2019 - Dec 2020}
+\vspace{5pt}
+    % \vspace{10pt}\textbf{\large{Community Experience}}
+    \resumeSubheading{International Conference on Advances in Distributed Computing and ML}{VIT University}
+    {Organized events, conducted workshops and delivered workshops reaching over 3000 developers.}{Jan 2020}
+
+\resumeSubHeadingListEnd
+
+\end{document}
